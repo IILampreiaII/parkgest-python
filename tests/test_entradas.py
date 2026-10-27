@@ -1,4 +1,5 @@
 import unittest
+from src.modelo import Veiculo, Parque, Estadia
 
 def pode_registar_entrada(veiculo_valido, vaga_disponivel):
     return veiculo_valido and vaga_disponivel
