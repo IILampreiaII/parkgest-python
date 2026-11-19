@@ -18,3 +18,13 @@ class Veiculo:
     def apresentar(self):
         return f"matricula: {self.matricula_valida}"
 
+    @classmethod
+    def de_dicionario(cls, dados):
+        return cls(dados["matricula_valida"])
+
+    #dicionario de serializacao 
+    def para_dicionario(self):
+          return { 
+                "matricula_valida":self.matricula_valida
+        }
+
